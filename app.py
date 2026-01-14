@@ -3,7 +3,8 @@ from PIL import Image
 import torch
 from torchvision import transforms
 import io
-from Backend.model import SimpleCNN
+from model import SimpleCNN
+
 
 app = FastAPI()
 
