@@ -17,8 +17,9 @@ model.to(device)
 model.eval()
 
 # Load class names
-with open("DATASETS/plant_dataset/train/classname.txt", "r") as f:
+with open("classnames.txt", "r") as f:
     class_names = f.read().splitlines()
+
 
 # Transform (same as training!)
 transform = transforms.Compose([
